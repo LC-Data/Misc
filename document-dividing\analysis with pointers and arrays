@@ -1,0 +1,74 @@
+#include <stdio.h>
+
+//sets a string length and counter variable, counter counts //spaces, returns the number of spaces in the string
+int countSpaces(char theString[]){
+	int len = strlen(theString), counter = 0;
+	for (int i = 0; i != len; i++){    
+		if (theString[i] == ' '){
+			counter = counter + 1;
+		}
+	}
+	return counter;
+}
+//splits the string in to a char** pointer/array so it can handle 
+//the individual words. Counts the number of words (strings) so
+//I can keep track of indexing
+char** splitString(char theString[], int arraySize){
+        char** arrStrings = NULL;
+        int numStrings = 0;
+        
+		arraySize = strlen(theString)+1;
+	    for(int i=0; i<arraySize; i++){
+	        c = theString[i];
+	        if(c == ' ' || c=='\0'){
+	            last = i-1;
+	            for(int j=0; j<i-start; j++){
+	                putchar(string[last--]);
+	            }
+	            if(c!='\0'){
+	                putchar(' ');
+	            }
+	            start = i+1;
+	        }
+	        
+		//start and end denote the beginning and the end of
+		//the string. Below I make sure we malloc enough 
+		//space to fit the entire string. Create a new array 
+		//to populate with placeholders 
+		//allocates heap space based on size of array and 			//increases numStrings which records the size(index)
+		//of the array containing our strings and points
+		//to it and adds the string to arrStrings.
+		//returns arrStrings, the list of strings.
+
+	        char* str = malloc((end-start+2)*sizeof(char));
+	        memset(str, '\0', (end-start+2));
+	        for (int k = start; k < last; k++)
+	        {
+	            str[k-start] = theString[k];  
+	        }
+	        
+	        if (arrStrings == NULL)
+	        {
+	            arrStrings = malloc(1*sizeof(char*));
+	            arrStrings[numStrings] = str;
+	            numStrings++;
+	        }
+	        else
+	        {
+	            pointer = realloc(pointer, 1*sizeof(char*));
+	            arrStrings[numStrings] = str;
+	            numStrings++;
+	        }
+	    }
+	return arrStrings;
+}
+
+//clears the heap space for every element I have in my arrays(and their pointer data?)
+void cleanup(char** strings, int numStrings)
+{
+    for (int i = 0; i < numStrings; i++)   
+        free(strings[i]);
+    
+    free(strings);
+    strings = NULL;
+}
