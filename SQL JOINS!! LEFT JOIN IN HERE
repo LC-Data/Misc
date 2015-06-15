@@ -1,3 +1,6 @@
+###For Dav1d at Dexagon, I have been brushing up on my SQL joins, and more :)
+
+
 ### Demonstration of joins in SQL, starting with a left join example.
 
 SELECT Department.CustomerName, Orders.OrderID
