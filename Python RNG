@@ -1,0 +1,18 @@
+import random
+
+def randNum():
+    #generate a random integer  between 0 and 9
+    aRandomNum = random.randint(1,11)
+    check = True
+    while check == True:
+        guess = input("What is your guess?: ")
+        if aRandomNum == guess:
+            print "You win!"
+            break
+        elif aRandomNum > guess:
+            print "Too low."
+        elif aRandomNum < guess:
+            print "Too high."
+
+randNum()
+            
