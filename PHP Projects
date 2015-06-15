@@ -8,3 +8,25 @@ fwrite($myfile, $txt);
 fclose($myfile);
 ?>
 
+### PHP document upload test
+
+<?php
+$uploadto = '/var/www/html/9nr13/Images/';
+if(isset($_FILES['profilepic']) && strlen($_FILES['profilepic']['name']) > 1) {
+  $uploadto = $uploadto . basename( $_FILES['profilepic']['name']);      
+  $uext = end($sepext);      
+  $errors = '';
+  $temp = explode(".",$_FILES['profilepic']['name']);
+  $uploadname = rand(1,99) . '.' .end($temp);
+   if($err == '') {
+    if(move_uploaded_file($_FILES['profilepic']['tmp_name'], $uploadto . $uploadname)) { 
+      echo "Profile picture uploaded... good luck!";
+    }
+    else echo 'Something went wrong...';
+  }
+  else echo $errors;
+}
+?> 
+
+
+### 
