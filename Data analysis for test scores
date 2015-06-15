@@ -1,0 +1,89 @@
+### 06264445 Nathan Roane.  Due Date, July 22, 2014.
+
+
+def readFile():    ### File reading function, for opening the provided text file
+    with open("c:/users/Nathan/downloads/APExam.txt", "r") as in_file:
+        for line in in_file:
+            if "State" in str(line): ### Skips the first line because it contains "State" in it. Easy way for the program to skip the first line of the file.
+                continue
+            statelist.append(str(line).rstrip().split(",")) ###appends my empty list found further down to create a list of states, the "rstrip" searches for commas in the lines and removes them
+                                                            ###additionally the split()function splits the string in to a list that contains each element between the ","s as specified by split(",")
+                                                            ###so my statelist ends up being a list of lists, with each list containing the [name of the state, total # of students, % that passed, % of females]
+                                                            
+##This function sorts based on two parameters, a list, and the position of a value in the list
+def selectionsort(givenList, parameter):
+    
+    for x in range(len(givenList)):
+        least = x
+        for k in range(x + 1, len(givenList)):
+            if int(givenList[k][parameter]) < int(givenList[least][parameter]):    ### This sorts the items based on the "least" variable, it iterates through each value of my master list
+                least = k                                                          ### based on what spot it is looking for in the lists, within the master list. (I hope that I'm not
+                                                                                   ### being too confusing). It compares every value it is searching for, if it finds a value lower than
+                                                                                   ### what is called "least", it assigns that new lower value to be "least", hence ordering the values it is
+                                                                                   ### searching for, based on the initial "least" value, which is at first set to 'x' which is the first
+                                                                                   ### list within the master list. 
+
+        if least != x:
+            
+            tempvar = givenList[least]                 ### this code swaps the least and the x values if need be, but provides a temporary spot for the values to be assigned to
+            givenList[least] = givenList[x]            ### otherwise one of the values would just be replaced with the other value, and we would essentially lose the value that
+            givenList[x] = tempvar                     ### that was being replaced, it would basically just be overwritten and lost
+            
+    return givenList
+ 
+
+def percent():    ### My function for asking user the % of females they want to search for, along with some errors (if needed) and a statement that the user has searched for a % higher than was recorded for any state.
+
+    percent_female = int(raw_input("What is the percentage females that you wish to search above for? ")) ### Asks the user what % of females to start searching from
+    if percent_female < 0:
+        print "Error: Please enter a number between 1 and 100."
+        print ""
+        percent()       ### If an error does occur the percent() function is called on again so the user can input a new integer right away.
+    elif percent_female > 100:          ### Above and below are my error code that is displayed if the user tries to search for a %threshold above 100 or lower than 0
+        print "Error: Please enter a number between 1 and 100."
+        print ""
+        percent()
+    elif percent_female >= 29 < 101:       ### just based on the information I know, I know there are no states with greater than 29% of females, so searching for a value of 30 - 100% provides the statement below:
+        print "There are no states that have more than the % of females you searched for participating in the test. Please enter a new number."
+        print ""
+        percent()
+    else:
+        for i in range(len(sort_female)):           ### Searches for states that have the specified % of females or greater taking the test and prints them out
+            if int(sort_female[i][3]) > percent_female:          ### compares the user given integer to the % of females taking the test, if they are greater
+                found = sort_female[i:]                           ### it adds that state and the % of females in to a list named "found"
+                break
+        print "States with greater than " + str(percent_female) + "% female participants include:"
+        for i in found:
+            print i[0], str(i[3]) + "%"     ### for each element in the found list, prints the 0th and 3rd element of the list, those values are the State name and the % of females. And adds a "%" sign after.
+                                            ### ultimately printing something like "StateX y%" or for example "Hawaii 19%"
+
+
+
+
+### These obviously won't work if you haven't changed the path for readFile()
+statelist = []            ### My empty list as mentioned on line 9
+readFile()            ### Calls the function to read the file given the correct path
+sort_total = selectionsort(statelist,1)   ### sorts through the file ordering states by total number of students taking test combined, predetermined parameters of searching for the total # of students
+print "The five states with the highest number are:"
+for i in sort_total[len(sort_total)-5:len(sort_total)]:
+    print str(i[0]) + ", " + str(i[1])
+print ""
+print "The five states with the lowest numbers are:"
+for i in sort_total[0:5]:
+    print str(i[0]) + ", " + str(i[1])
+
+print ""
+
+sort_female = selectionsort(statelist,3) ##sorting function that has the predetermined parameters of searching for % of females 
+print "The three states with the highest percentage females are:"
+for i in sort_female[len(sort_female)-3:len(sort_female)]:
+    print str(i[0]) + ", " + str(i[3])  ### prints from the list when ordered with the above given parameters, the states with the 3 highest % of female students
+
+no_females = 0               ### records the number of states in which no females took the test
+for i in sort_female:
+    if int(i[3]) == 0:          ### Checks to see if the number of females of each state == 0, if so, increments the number of states with 0 females (the no_females variable) taking test by +1
+        no_females += 1
+print str(no_females) + " states had no females take the test. Bummer..."
+print ""
+
+percent()    ### calls on the percent() function to ask the user what they want
