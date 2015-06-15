@@ -1,0 +1,76 @@
+### File prep/method practice/visual formatting practice
+
+### NATHAN ROANE 2014
+
+import string ###for the rot13 
+import random ###for the dice 
+from operator import add ### for the dice, I need the "from operator" part
+
+
+    
+###Encrypts the letters by shifting them 13 positions in the alphabet
+def rot13(user_input):
+    ###assigns each letter to an encryption value
+    rot13 = string.maketrans("ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz", "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm")
+    ###shifts the given string 13 spaces
+    return string.translate(user_input, rot13)
+
+###The rot13 test to call on to test if it works
+def testRot13(): 
+    encrypted = rot13("I have encrypted this message") 
+    print encrypted 
+    decrypted = rot13(encrypted) 
+    print decrypted 
+    encrypted = rot13("Computing is the profession for me") 
+    print encrypted 
+    decrypted = rot13(encrypted) 
+    print decrypted
+
+###Prompts user for the number of layers they want the pyramid to be
+def layers():
+    layers = raw_input("Input the amount of layers in your pyramid: ")
+    ###Uses the draw function with the provided user input to build ourselves a pyramid! (I bet that's how the Egyptians actually did it)
+    build(int(layers))
+    
+###Draws the pyramid with amount of layers provided by user
+def build(layers):
+    for x in range(layers):
+        ###Prints the asterisks centered
+        print ' '*(layers-x-1) + '*'*(2*x+1)
+
+###My attempt at the dice performance
+x_rolls = []
+y_rolls = []
+
+def rolling_dice():
+    num_o_rolls = raw_input ("How many times would you like to roll the die? ")  ### Getting a user input for how lucky they feel
+    for x in range(0,str(num_o_rolls)):   ###rolls x-die as many times from range 0 to whatever the user inputs
+        x_rolls.append(x)                   ###adds each roll of x in to a list for the x-rolls
+    for y in range(0,str(num_o_rolls)):         ###see above
+        y_rolls.append(y)                       ###see above
+    added_die_rolls = map(add, x_rolls, y_rolls)    ###attempts to add the two lists together to create a new (added_die_rolls) list that contains the sums of each roll of the dies x and y values
+    print added_die_rolls       
+
+###Menu to navigate to the chosen question. I don't know how to make a space appear in between the menu and the previous questions (once the question has been finished)
+def menu():
+    print ("Choose a question by entering the corresponding number:")
+    print ("1: Pyramid Builder")
+    print ("2: Rot13 Encryption")
+    print ("3: Rot13 Encryption Test")
+    print ("4: Rolling the Dice")
+    choice = raw_input()
+    if (choice == "1"):
+        layers()
+    elif (choice == "2"):
+        text = raw_input("Input text to be encrypted/decrypted: ")
+        print rot13(text)
+    elif (choice == "3"):
+        testRot13()
+    elif (choice == "4"):
+        rolling_dice()
+    else:
+        print "Number invalid"
+
+if __name__ == "__main__":              ###Checks if the python file has been executed, if so it assumes the name "main", if so it constantly calls upon the menu function. 
+    while True:
+        menu()
