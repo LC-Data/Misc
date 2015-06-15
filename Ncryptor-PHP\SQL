@@ -1,0 +1,18 @@
+### PHP communication to SQL storing encrypted text
+
+<?php
+
+$res = $_POST["res"];
+
+
+try {
+    $dbh = new PDO('mysql:host=localhost;dbname=ncrypt', "root", "282mysql");
+    print "Your encrypted text was recorded in our database as: $res ";
+    $rows = $dbh->exec("insert into encrypted (text) values ('$res')");
+
+    $dbh = null;
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+?>
