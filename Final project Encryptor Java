@@ -1,0 +1,79 @@
+### Adding text to be encrypted
+
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script language="JavaScript" type="text/javascript">
+<!--
+function xor_str()
+{
+	var to_enc = document.forms['the_form'].elements["str"].value;
+
+	var xor_key=document.forms['the_form'].elements.xor_key.value
+	var the_res="";//the result will be here
+	for(i=0;i<to_enc.length;++i)
+	{
+		the_res+=String.fromCharCode(xor_key^to_enc.charCodeAt(i));
+	}
+	document.forms['the_form'].elements.res.value=the_res;
+}
+
+function decrypt_str()
+{
+	var to_dec=document.forms['the_form'].elements.res.value
+	document.forms['the_form'].elements.dec_res.value="";
+
+	var xor_key=document.forms['the_form'].elements.xor_key.value
+	for(i=0;i<to_dec.length;i++)
+	{
+		document.forms['the_form'].elements.dec_res.value+=String.fromCharCode(xor_key^to_dec.charCodeAt(i));
+	}
+}
+//-->
+</script>
+
+
+
+### Image change for on mouseover or other
+
+<script type="text/javascript">
+	function imageChange1() {
+        document.getElementById('about').src = "http://54.68.137.106/9nr13/Images/about2.png";
+	}
+
+function imageChange2() {
+        document.getElementById('home').src = "http://54.68.137.106/9nr13/Images/home2.png";
+	}
+
+function imageChange3() {
+        document.getElementById('warning').src = "http://54.68.137.106/9nr13/Images/warning2.png";
+	}
+
+function imageChange4() {
+        document.getElementById('contact').src = "http://54.68.137.106/9nr13/Images/contact2.png";
+	}
+
+function imageChange5() {
+        document.getElementById('encrypt').src = "http://54.68.137.106/9nr13/Images/encrypt2.png";
+	}
+
+function imageChange11() {
+        document.getElementById('about').src = "http://54.68.137.106/9nr13/Images/about1.png";
+	}
+
+function imageChange22() {
+        document.getElementById('home').src = "http://54.68.137.106/9nr13/Images/home1.png";
+	}
+
+function imageChange33() {
+        document.getElementById('warning').src = "http://54.68.137.106/9nr13/Images/warning1.png";
+	}
+
+function imageChange44() {
+        document.getElementById('contact').src = "http://54.68.137.106/9nr13/Images/contact1.png";
+	}
+
+function imageChange55() {
+        document.getElementById('encrypt').src = "http://54.68.137.106/9nr13/Images/encrypt1.png";
+	}
+
+	</script>
+
+
