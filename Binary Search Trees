@@ -1,0 +1,150 @@
+import random # used in deleteHelper and randTree
+import math # used in averageHeight
+
+# A BST node is a dict with three elements:
+# 1. data: the value in the node
+# 2. left: a reference to the left subtree
+# 3. right: a reference to the right subtree
+
+# creates an empty tree
+def createEmptyTree():
+    return None
+
+# adds a value to a BST and returns a pointer to the modified BST
+def add(tree, value):
+    if tree == None:
+        return {'data':value, 'left':None, 'right':None}
+    elif value < tree['data']:
+        tree['left'] = add(tree['left'],value)
+        return tree
+    elif value > tree['data']:
+        tree['right'] = add(tree['right'],value)
+        return tree
+    else: # value == tree['data']
+        return tree # ignore duplicate
+
+# returns the height of a BST (length of maximum path from root to leaf).
+# The height of an empty tree is 0.
+def height(tree):
+    if tree == None:
+        return 0
+    else:
+        return 1 + max(height(tree['left']),height(tree['right']))
+        
+
+# searches a tree for a value and returns True if the
+# value is in the tree
+def search(tree, value):
+    if tree == None:
+        return False
+    elif value == tree['data']:
+        return True
+    elif value < tree['data']:
+        return search(tree['left'],value)
+    else: # value > tree['data']
+        return search(tree['right'],value)
+
+# creates a list of the elements in the tree, in sorted order
+def toList(tree):
+    if tree == None:
+        return []
+    else:
+        return toList(tree['left']) + [tree['data']] + toList(tree['right'])
+
+# Prints an indented display of the tree -- useful for debugging.
+# The output will look kind of like a sideways version of a drawing
+# of the tree.
+def display(tree, indent=0):
+    if tree == None: # empty
+        pass
+    else:
+        # right tree first (so it's on the right when you tilt your
+        # head to the left to look at the display)
+        display(tree['right'],indent+1)
+        print "    "*indent + str(tree['data'])
+        # now the left tree
+        display(tree['left'],indent+1)
+
+
+
+def maxValue(tree):
+    """
+    Finds the maximum value in a tree.  The tree
+    will not be empty.  
+    """
+    if tree['right'] == None:
+        return tree['data']
+    else:
+        return maxValue(tree['right'])
+
+
+def randTree(size=10):
+    """
+    Helper for testing: creates a tree with random integers.
+    The parameter gives the number of integers to put into
+    the tree.
+    """
+    tree = None
+    # Put the numbers 1-size into a list and shuffle it into random order.
+    nums = range(1,size+1)
+    random.shuffle(nums)
+    for n in nums:
+        tree = add(tree,n)
+    return tree
+
+    
+
+
+myTree = createEmptyTree()  #create an empty tree
+#Create a tree with the nodes [20, 2, 25, 14, 75, 93]
+#Note that the add function always returns the root of the BST!
+myTree = add(myTree, 20)
+myTree = add(myTree, 2)
+myTree = add(myTree, 25)
+myTree = add(myTree, 14)
+myTree = add(myTree, 75)
+myTree = add(myTree, 93)
+
+#display the tree -- awkward -- you need to look at it sideways -- sorry :-)
+
+
+
+
+
+def oddNode(tree) :
+    result = 0
+    if tree == None :
+        return []
+    else :
+        if tree['data'] % 2 == 1 :
+            result = result + 1
+            return int((result + oddNode(tree['left']) + oddNode(tree['right'])))
+            type(result)
+
+def remove(tree):
+    if tree['left']['left'] == None:
+        tree['left'] = None
+    else:
+        remove(tree['left'])
+    return tree
+
+
+def delLeaves(tree):
+    if tree == None :
+        return 0
+    else :
+        checkL = delLeaves(tree['left'])
+        checkR = delLeaves(tree['right'])
+        if checkR == 0 and checkL == 0 :
+            tree['data'] = None
+    return display(tree)
+
+display(myTree)
+
+print " "
+print " "
+print " "
+print " "
+print " "
+
+print(display(remove(myTree)))
