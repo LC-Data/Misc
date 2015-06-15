@@ -1,0 +1,19 @@
+def tipper(cost,tip):
+    total_cost = cost + cost*tip
+    return total_cost
+
+def inputs():
+    meal_cost = input("How much was your meal?: ")
+    your_tip = input("How much are you tipping?: ")
+    if your_tip < .10:
+        print "You cheapskate."
+        return -1
+    elif .10 < your_tip < .15:
+        print "You can do better than that."
+        print "How about something better than 15%?"
+        inputs()
+    elif your_tip > .15:
+        print "Big spender."
+        print tipper(meal_cost,your_tip)
+
+inputs()
