@@ -1,3 +1,3 @@
 # Misc
-Assorted projects/snippets of coding
+Assorted projects/snippets of Python coding
 2014/2015
