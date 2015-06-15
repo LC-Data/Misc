@@ -1,0 +1,164 @@
+### 2015 Nathan Roane
+### OH BOY LINKED LISTING IN PYTHON
+
+def createList(plist):                                  ### Provided function
+    linkedList = None
+    # goes backwards, adding each element to the beginning
+    # of the list.  
+    for index in range(len(plist)-1, -1, -1):
+        linkedList = insertValueHead(linkedList, plist[index])
+    return linkedList
+
+
+def emptyList():                                        ### Provided function
+  return None   #absence of a value -- nothing
+
+
+def listString(linkedList):                             ### Provided function
+  ptr = linkedList
+  str1 = ''
+  while ptr != None:
+    str1 += str(ptr['data'])
+    ptr = ptr['next']
+    if ptr != None:
+      str1 += "->"
+  return str1
+
+
+def insertValueHead(linkedList, value):                 ### Provided Function
+    newnode = {}
+    newnode["data"] = value
+    newnode["next"] = linkedList
+    return newnode
+
+
+def nthNode(linkedList, n):                             ### Provided function
+    ptr = linkedList
+    count = 0
+    if n < 0:
+        return None
+    while ptr != None and count < n:
+        ptr = ptr['next']
+        count += 1
+    return ptr
+
+
+def insertNode(linkedList, index, value):
+                                                            ### Assigning variables to relevant list poisitions
+    headNode = linkedList                                   ### head of the list. Makes use of the nthNode provided function,
+    TargetNode = nthNode(linkedList, index)                 ### TargetNode or the destination node, or the "index" parameter
+    prevNode = nthNode(linkedList, index-1)                 ### the node before the current index node
+
+    if TargetNode == None:                             ### case where its greater than the size of the list already
+        if prevNode == None:                           ### if previous is none that means its asking for a position way outside of the original list,
+            print "Error"                              ### so this will produce and error. 
+            return headNode
+
+    elif index == 0:                                        ### inserting at the head of the list head, calls on the provided insertValueHead function
+        headNode = insertValueHead(linkedList, value)       ### to insert a new node at the beginning of the list (a new head) with the provided value as the data
+        return headNode                                     ### stored in that node.
+    elif int(index) > len(linkedList):
+        append.linkedList(value)                        ### The only part of the code I couldn't figure out, it will show up in the tests. Tried a lot of different methods.
+    
+    else:
+        newnode = {}                                        ### creates a new node (and empty dictionary) to insert in to and changes the locations/pointers of 
+        newnode["data"] = value                             ### the other nodes based on the position of the newly created node. Takes in to account being in the head 
+        newnode["next"] = TargetNode                        ### position of the list and assigns the appropriate next node as the new node.
+        if prevNode != None:                                
+            prevNode["next"] = newnode
+        return headNode
+        
+def switch(linkedList, index):
+    
+    
+    headNode = nthNode(linkedList, 0)                   ### Assigning variables to the nodes that matter for switching. The headNode is the beginning of the list
+    TargetNode = nthNode(linkedList, index)             ### the _nthNode is the target node for switching in our function
+    prevNode = nthNode(linkedList, index-1)             ### and the prevNode is the node that is found before our target position
+
+    if TargetNode == None:                              ### If the index is not contained in the list, an error is produced
+        print "Error: index not found. "
+        return headNode
+    
+    if index == 0:                                      ### Deals with the case for switching the head node with the head node, does nothing really
+        print "Only 1 Node"
+        return headNode
+
+                                                       
+    else:                                               
+        nthPointer = TargetNode["next"]                 
+        headPointer = headNode["next"]                   
+        nthValue = TargetNode["data"]                    ### Making new node, changing pointers
+        headValue = headNode["data"]                     ### if the previous two if statements are nonapplicable, the function makes a new node
+                                                         ### and then changes the pointers of the surrounding nodes to reflect their new
+        TargetNode["next"] = headPointer                 ### positions with respect to the index.
+        headNode["next"] = nthPointer
+        prevNode["next"] = headNode
+
+    return TargetNode
+        
+        
+
+
+def sumEvens(linkedList):
+      
+    current = linkedList             
+    total = 0                                    ### Initial variable that will be the total sum of all of the even numbers. My function uses a while loop to
+    while current != None:                       ### iterate through the "data" values in the list, when called the current will not = None until the end of the list. 
+        if current["data"] % 2 == 0:             ### If they are even (when modulo 2 = zero), it adds that value to the total, and continues on to the next data value.
+            total += current["data"]             ### In the end the function returns total which should be the combined sum of all of the even numbers in the list.
+        current = current["next"]
+    return total
+
+def testInsert():                                                           ### Provided test function for inserts
+  #test code to ensure that insertNode is working correctly.
+  myList = createList([1, 2, 3, 4, 5, 6])
+  print "Below are the test cases for the insert function"
+  print ""
+  print "The initial list", listString(myList)
+  #insert 0 at the head
+  myList = insertNode(myList,0, 0)
+  print "Inserted 0 at the start of list: ", listString(myList)
+  #insert 7 at the end
+  myList = insertNode(myList, 7, 7)
+  print "Inserted 7 at the end of list: ", listString(myList)
+  myList= insertNode(myList, 3, 2.2)
+  print "Inserted 2.2 in the 3rd position ", listString(myList)
+  myList = insertNode(myList, 26, 12)   #should generate an error
+
+def testSumEvens():### Provide test function for sums
+    print "Below are the test cases for the adding even values function"
+    print ""
+    myList = createList([14, 21, 29, 2, 16, 49, -26])
+    print "The sum of the even numbers in the first list is ", sumEvens(myList)
+    myList = createList([])
+    print "The sum of the even numbers in an empty list is ", sumEvens(myList)
+    myList = createList([5, 15, 25])
+    print "The sum of the even numbers in the final list is ", sumEvens(myList)
+    
+def testSwitch():                                                           
+    #test code to ensure that switch() is working correctly.
+    myList = createList([10, 20, 30, 40, 50, 60])
+    print ""
+    print "Below are the test cases for the switch function: "
+    print ""
+    print "The initial list", listString(myList)
+    myList = switch(myList, 2)
+    print "Switching the 1 and the 2.  Resulting list is ", listString(myList)
+    myList = switch(myList, 3)
+    print "Switching the 4 and the 5.  Resuling list is ", listString(myList)
+    myList = switch(myList, 5)
+    print "switching 5", listString(myList)
+    myList = switch(myList, 29)  #should result in an error
+    print ""
+
+def main():
+    intro_msg()                            ### My main function, which starts the program by calling all of the test functions required.
+    testInsert()
+    testSwitch()
+    testSumEvens()
+
+def intro_msg():
+    print "Below the 3 test functions will run as follows: testInsert first, testSwitch second and testSumEvens last."
+    print ""
+    
+main()
