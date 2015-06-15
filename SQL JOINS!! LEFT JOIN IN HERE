@@ -1,0 +1,32 @@
+### Demonstration of joins in SQL, starting with a left join example.
+
+SELECT Department.CustomerName, Orders.OrderID
+FROM Department
+LEFT JOIN Orders
+ON Department.CustomerID=Orders.CustomerID
+ORDER BY Department.CustomerName;
+
+### the inner join
+
+SELECT Department.CustomerName, Orders.OrderID
+FROM Department
+INNER JOIN Orders
+ON Department.CustomerID=Orders.CustomerID
+ORDER BY Department.CustomerName;
+
+### the right join
+
+SELECT Orders.OrderID, Agents.FirstName
+FROM Orders
+RIGHT JOIN Agents
+ON Orders.EmployeeID=Agents.EmployeeID
+ORDER BY Orders.OrderID;
+
+### Full outer
+
+SELECT Dept.CustomerName, Orders.OrderID
+FROM Dept
+FULL OUTER JOIN Orders
+ON Dept.CustomerID=Orders.CustomerID
+ORDER BY Dept.CustomerName;
+
