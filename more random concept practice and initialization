@@ -1,0 +1,117 @@
+### 2015 Nathan Roane
+### more random concept practice and initialization, visual formatting, testing concepts
+
+
+
+import sys    ### Just use this for my menu, a way to end the program
+
+
+
+def multiplier(x,y):                    ### My multiplication function, if x == 1, only returns y (because it would be 1*y). If x == 0, simply returns 0 as 0*y=0.
+    if (x == 1):                        ### Otherwise the function returns y + multiplier(x-1,y), effectively returning "y + y + y... etc" until x == 1, where it 
+        return y                        ### returns a final y value. Uses the same concept as the hint given in the assignment -
+    elif (x == 0):                      ### "Remember that multiplication can be performed as repeated addition such as the following:
+        return 0                        ###  7 x 2 = 2 + 2 + 2 + 2 + 2 + 2 + 2"
+    else:                               ### Below I have another function that is used to obtain x and y values for "multiplier" and to print the answer in a nice
+        return y + multiplier(x-1,y)    ### way for the user, it is the function that will be called from the menu.
+
+
+
+def multiplier_answer():
+    x = int(raw_input("Please enter the first number (greater than zero) you would like to multiply: "))
+    y = int(raw_input("Please enter the second number (greater than zero) you would like to multiply with the first: "))
+    answer = multiplier(x,y)
+    print " "
+    print str(x) + " multiplied by " + str(y) + " is equal to " + str(answer) + "."
+    print " "           ### This is the above mentioned function. "x" and "y" values are obtained and proccessed by the multiplier function, and presented to
+    menu()              ### the user nicely. Also calls the menu function again so the user can get right back to the menu after selecting/completing their choice.
+
+
+
+
+def asterisk_lines(n):                ###My star printer, if n == 1 it only prints 1 star, this was the only way I could get it to work, and even when it recurses
+    if n == 1:                        ###back to n = 1, it completes the tip of the triangle
+        print "*"                     ###if n is anything greater than 1, the function recurses and takes n-1 as the new parameter, and prints n-1 amount of stars
+    else:                             ###every time it recurses back up, which print on separate lines.
+        asterisk_lines(n-1)
+        print "*" * n
+
+
+
+def asterisk_lines_answer():        
+    n = int(raw_input("How many lines of asterisks would you like to build?: ")) 
+    asterisk_lines(n)   ### Just like the multiplier function, this is the function that utilizes            
+    print " "           ### the "asterisk_lines" function, and is the one that will be
+    menu()              ### called from the menu, which allows me to collect a value for "n".
+
+
+
+def letCheck(string_a,string_b):                      ### My string-checker, first checks to see if the 0th position of the string-b is also present in string-a. If it isn't,
+    if (len(string_b) == 1):                          ### it returns False right away, because the b-string characters are not all present in a. If b[0] is present in string-a
+        if string_b[0] in string_a:                   ### the function calls on itself again but instead with b[1:], instead of b[0] as the second parameter. "b[1:]" means that the
+            return True                               ### entire b-string (minus the 0th character) is put back in to the function, where the function then looks at b[0] of b[1:],
+    if string_b[0] in string_a:                       ### and repeats the process again. All in all the function compares the first letter of string-b to string-a, and then shortens
+        return letCheck(string_a,string_b[1:])        ### string-b over and over until nothing is left.
+    else:
+        return False
+    menu()
+
+
+
+def testletCheck():                                 ### provided test function that is called by option 3 in my menu.
+    print letCheck("racecar", "xlc")
+    print letCheck("myvalues", "vyms")
+    print letCheck("abc", "def")
+    print " "
+    menu()
+
+
+
+def findMin(x_list):                          ### My function for finding the minimum value in a list, first checks to see if the list only has one value, if it does
+    if len(x_list) == 1:                      ### then that is obviously the minimum. If it has more than one value, the function calls on itself with all but the
+        return x_list[0]                      ### first value from the list(which gets smaller every time it recurses, to the point where just one value is left),and
+    else:                                     ### compares those values to the first number of the list, if it is smaller, it becomes the new min to which the rest
+        list_min = findMin(x_list[1:])        ### of the numbers are compared.            
+        if list_min <= x_list[0]:             
+            return list_min
+        elif list_min > findMin(x_list[1:]):
+            return num_list[0]
+
+
+
+def testMin():                                      ### provided test function that is called by option 4 in my menu.
+    myList = [ 17, 49, 32, 6, -1]
+    print "The minimum of " + str(myList) + " is " + str(findMin(myList)) + "."
+    myList = [0]
+    print "The minimum of " + str(myList) + " is " + str(findMin(myList)) + "."
+    print " "
+    menu()
+
+
+
+def menu():
+    print ("Choose a question by entering the corresponding number:")           ### My menu function, should be pretty straight forward.
+    print ("1: Number multiplier")
+    print ("2: Asterisk line printer")
+    print ("3: String letter checker")
+    print ("4: Minimum value finder")
+    print ("9: End Program")
+    print " "
+    choice = raw_input()
+    if (choice == "1"):
+        multiplier_answer()
+    elif (choice == "2"):
+        asterisk_lines_answer()
+    elif (choice == "3"):
+        testletCheck()
+    elif (choice == "4"):
+        testMin()
+    elif (choice == "9"):
+        sys.exit(0)
+    else:
+        print "Invalid choice"
+        menu()
+
+
+
+menu()
