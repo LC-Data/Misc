@@ -1,0 +1,18 @@
+###BASH assorted schell scripts and commands
+
+### Linking multiples
+
+gcc -c readMarks.c
+gcc -c statistics.c
+gcc -c histogram.c
+gcc -o assn4 assn4.c readMarks.o statistics.o histogram.o -lm
+
+### and debug
+
+#!/bin/bash
+
+gcc -c readMarks.c
+gcc -c statistics.c
+gcc -c histogram.c
+cc -DEBUG=1 -o assn4 assn4.c readMarks.o statistics.o histogram.o -lm
+
