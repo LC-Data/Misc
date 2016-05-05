@@ -1,4 +1,4 @@
-### PHP posting data easy method to text file
+### PHP posting data easy method to text file, was used to save submitted profiles to my mySQL dbase for WebDev course website.
 
 <?php
 $myfile = fopen("clients.txt", "w") or die("Unable to open file :(");
