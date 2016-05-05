@@ -1,11 +1,11 @@
-###BASH assorted schell scripts and commands
+###BASH assorted schell scripts and commands for compiling and joining mark analysis histogram/program
 
 ### Linking multiples
 
 gcc -c readMarks.c
 gcc -c statistics.c
 gcc -c histogram.c
-gcc -o assn4 assn4.c readMarks.o statistics.o histogram.o -lm
+gcc -o assignment4 assignment4.c readMarks.o statistics.o histogram.o -lm
 
 ### and debug
 
@@ -14,5 +14,5 @@ gcc -o assn4 assn4.c readMarks.o statistics.o histogram.o -lm
 gcc -c readMarks.c
 gcc -c statistics.c
 gcc -c histogram.c
-cc -DEBUG=1 -o assn4 assn4.c readMarks.o statistics.o histogram.o -lm
+cc -DEBUG=1 -o assignment4 assignment4.c readMarks.o statistics.o histogram.o -lm
 
