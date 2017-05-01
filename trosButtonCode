@@ -1,0 +1,5 @@
+<a class="btn btn-primary icon-btn icon-link" style="float: left; margin-right: 5px;" 
+href="LINK GOES HERE" target="_blank" rel="nofollow">Go To Link</a>
+
+<a class="btn btn-secondary icon-btn social-nav-btn twitter" style="background-color: #4099ff;" 
+href="PRE-TWEET GOES HERE" target="_blank"> Click to Tweet </a>
