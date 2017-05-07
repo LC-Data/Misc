@@ -1,71 +1,257 @@
-<div style="color: #00ff00; font-size: 6vh; font-family: "Times New Roman"; font-style: italic; text-align: left;">We support Dr. Tedros</div>
+<style>
 
-<div>
-<div style="width: 20%; height: 350px; text-align: center; float: left; margin-right: 4%;">
-Dr.Tedros
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"I am the best"
-<a class="btn btn-primary icon-btn icon-link" style="float: left;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
+td {
+    width: 30%;
+    word-wrap: break-word;
+    text-align: center;
+}
 
+a {
+    padding-top: 10px;
+}
 
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Prof. A. Samuels
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"Tedros is the best for the job"
-<a class="btn btn-primary icon-btn icon-link" style="float: middle; margin-right: 5px;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
+</style>
 
 
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Jane Anderson
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"There is nobody better"
-<a class="btn btn-primary icon-btn icon-link" style="float: middle; margin-right: 5px;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
 
 
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Minister of XYZ
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"The most promise this position<br> has ever seen"
-<a class="btn btn-primary icon-btn icon-link" style="float: middle; margin-right: 5px;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
-
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Roman Vice
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"Dr.Tedros has what nobody else can offer"
-<a class="btn btn-primary icon-btn icon-link"style="float: middle; margin-right: 5px;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
+Wonderful paragraph about Dr.Tedros is going to be right here... lorem ipsum dolor olum cuit lorem ipsum dolor olum cuit lorem ipsum dolor olum cuit lorem ipsum dolor olum cuit lorem ipsum dolor olum cuit lorem ipsum dolor olum cuit lorem ipsum dolor olum cuit.
 
 
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Prof. A. Samuels
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"Tedros is the best for the job"
-<a class="btn btn-primary icon-btn icon-link" style="float: middle; margin-right: 5px;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
+<table style="table-layout: fixed; width: 100%; float: middle; text-align: center;" border="0" cellpadding="20">
+<tbody>
+<tr>
+<td>
+<b>African Union</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2017/05/Logo_of_the_African_Union.png" width="175" height="175"><br>"Dr. Tedros has the formal endorsement of the African Union"<br><br>
+<a class="btn-primary" href="http://allafrica.com/stories/201602040758.html">Read Endorsement</a></td>
+
+<td>
+<b>World Council of Curches</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2017/05/World_council_of_churches_logo.gif" width="175" height="175"><br>"The World Council of Churches backs Dr. Tedros"<br><br><a class="btn-primary" href="http://www.waltainfo.com/index.php/news/detail/25291">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Ethiopian Public Health Association (EPHA)</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" width="175" height="175"><br>"EPHA backs Dr. Tedros Election As WHO Chief"<br><br><a class="btn-primary" href="http://allafrica.com/stories/201607270487.html">Read Endorsement</a></td>
+</tr>
 
 
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Jane Anderson
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"There is nobody better"
-<a class="btn btn-primary icon-btn icon-link" style="float: middle; margin-right: 5px;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
+
+<tr>
+<td class="ui-helper-center" style="text-align: center; word-wrap: break-word;" height="500"><b>College of Surgeons of East, Central and Southern Africa (Association of Surgeons of East Africa)</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>"Dr. Tedros Adhnaom is a visionary leader and patriot in promoting quality health
+service and access"<br><br><a class="btn-primary" href="http://www.drtedros.com/wp-content/uploads/2016/06/DrTedrosLetterOfSupport-COSECA.pdf">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>The Medical Education Partnership Initiative Council of PIs</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"MEPI fully supports the candidacy for Dr. Tedros Adhanom for Director General of the WHO"<br><br><a class="btn-primary" href="http://www.drtedros.com/wp-content/uploads/2016/08/DrTedrosLetterOfSupport-MEPIPIs.pdf">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>African Society for Blood Transfusions</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"Dr. Tedros is a leader with the wealth of experience building and strengthening robust and functional health
+systems, saving millions of lives"<br><br><a class="btn-primary" href="http://www.drtedros.com/wp-content/uploads/2016/06/DrTedrosLetterOfSupport-ASFBT.pdf">Read Endorsement</a></td>
+</tr>
 
 
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Minister of XYZ
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"The most promise this position<br> has ever seen"
-<a class="btn btn-primary icon-btn icon-link" style="float: middle; margin: auto;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
 
-<div style="width: 20%; height:350px; text-align: center; float: left; margin-right: 4%;">
-Roman Vice
-<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" height="175" width="175">
-"Dr.Tedros has what nobody else can offer"
-<a class="btn btn-primary icon-btn icon-link"style="float: middle; margin-right: 5px;" href="http://www.thehindu.com/news/international/india-likely-to-vote-for-ethiopian-candidate-in-who-director-general-elections/article17988416.ece" target="_blank" rel="nofollow">Go To Link</a>
-</div>
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;"><b>Ethio-American Doctors Group</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"Ethio-American Doctors Group fully supports Dr. Tedros Adhanom to become the next Director General of the WHO"<br><br><a class="btn-primary" href="http://www.drtedros.com/wp-content/uploads/2016/06/DrTedrosLetterOfSupport-EADG.pdf">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Ethiopian Medical Association</b><img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"Tedros has the best credentials and vision to tackle existing and emerging health threats"<br><br><a class="btn-primary" href="http://www.drtedros.com/wp-content/uploads/2016/06/DrTedrosLetterOfSupport-EMA.pdf">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Ethiopian Association of Obstetricians and Gynecologists</b>
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"Outstanding ability, capacity and visionary leadership which were demonstrated while he was the Federal Minister of Health"<br><br><a class="btn-primary" href="http://www.drtedros.com/wp-content/uploads/2016/06/DrTedrosLetterOfSupport-ESOG.pdf">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;"><b>Honorable Andrew Mitchell</b>
+Conservative MP for Sutton Coldfield
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="https://www.theguardian.com/commentisfree/2017/apr/27/who-failed-ebola-pandemic-reform-world-health-organization-dr-tedros-adhanom-ghebreyesus">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Dr. Helen Befekadu Mesfin</b>
+Children Heart Fund Ethiopia, Cardiac Center
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary href="https://medium.com/@WeWantDrTedros/i-walked-the-walk-with-dr-tedros-the-hidden-humanitarian-not-to-be-missed-by-who-a7d4d3943f44">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Ayanle Salad Dirye</b>
+Deouty Ambassador of Somaliland to Ehiopia
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary href="http://www.somalilandpress.com/somaliland-endorses-dr-tedros-adhanom-ghebreyesus-top-post/">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Zaeem Ul Haq, MBBS MPH</b>
+Public Health Physician, Current Health Advisor with Save the Children
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary href="http://blogs.plos.org/yoursay/2017/04/05/opinion-who-should-lead-who/">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Marwane Ben Yahmed</b>
+Editor, Jeune Afrique
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary href="http://www.jeuneafrique.com/mag/424154/societe/loms-aux-africains/">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Akash Goel</b>
+Physician, journalist and WEF Global Shaper
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary href="https://www.devex.com/news/opinion-the-election-that-matters-for-the-health-of-the-world-89538">Read Endorsement</a></td>
+</tr>
+
+
+<tr>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Dr. Prashant Yadav</b>
+Dir. of Healthcare Research at the William Davidson Institute at University of Michigan
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary href="https://www.devex.com/news/opinion-the-election-that-matters-for-the-health-of-the-world-89538">Read Endorsement</a></td>
+
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Dr. Jill W. Sheffield</b>
+Independent consultant, longtime advocate for women’s health and rights.
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" <a href="https://www.project-syndicate.org/commentary/who-director-general-ghebreyesus-africa-by-peter-a--singer-and-jill-w--sheffield-2017-01">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Dr. Peter A. Singer</b>
+Chief Executive Officer of Grand Challenges Canada
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best" <br><br><a class="btn-primary" href="https://www.project-syndicate.org/commentary/who-director-general-ghebreyesus-africa-by-peter-a--singer-and-jill-w--sheffield-2017-01">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;">
+<b>Louise Mushikiwabo</b>
+Foreign Affairs Minister of Rwanda
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"
+<br><br>
+<a class="btn-primary" href="http://www.newtimes.co.rw/section/article/2016-06-08/200590/">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>H.E. Dr. Nkosazan Clarice Dlamini-Zumaa</b>
+Former AU Commission Chairperson
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>H.E. Amina Mohamed</b>
+Kenyan Cabinet Secretary for Foreign Affairs and International Trade
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I have no link"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;"><b>H.E. Dr. Tekeda Alemu</b>
+Ethiopian Ambassador to UN
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>H.E. Ramtane Lamamra</b>
+Minister of Foreign Affairs Algeria
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>H.E. Festus Gontebanye Mogae</b>
+Former President of Botswana
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;"><b>H.E. Dr. Moussa Faki Mahamat</b>
+Current AU Commission Chairperson
+Former Minister of Foreign Affairs Chad
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Ms. Katja Iverson</b>
+Women Deliver
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>HE Mr. Taban Deng Gai
+</b> Vice-President of South Sudan
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;"><b><b>HE Mr. Mogweetsi Masisi</b>
+Vice-President of Botswana
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"</br></br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>HE Ms. Netumbo Nandi-Ndaitwah</b>
+Deputy Prime Minister of Namibia
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>HE Dr. Augustine Mahiga</b>
+Minister of Foreign Affairs of Tanzania
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;"><b>HE Professor Ibrahim Ghandour</b>
+Minister of Foreign Affairs of Sudan
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Zeray Hailemariam</b>
+Ethiopian blogger, Walta Information Center
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Samuel Getachew</b>
+Ethiopian Diaspora Blogger
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+</tr>
+
+
+
+<tr>
+<td class="ui-helper-center" style="text-align: middle; word-wrap: break-word;"><b>William Foreman</b>
+Former foreign correspondent and public relations global communications strategist
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Hafsa O. Mohamed</b>
+Ethiopian Diaspora Blogger
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Carlos del Rio, MD</b>
+Hubert Professor and Chair of Department of Global Health, Rollins School of Public Health
+Professor of Medicine, Infectious Disease Division at Emory University
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175">
+"I am the best I am the best I am the best I am the best I am the best I am the best I am the best I am the best"<br><br> <a class="btn-primary" href="#">Read Endorsement</a></td>
+</tr>
+
+
+<tr>
+
+<td class="ui-helper-center" style="word-wrap: break-word;"><b>Hans Rosling</b>
+Swedish Doctor, Statistician, Development Expert
+<img src="http://www.drtedros.com/wp-content/uploads/2016/05/tedros-un-300x300.jpg" alt="Smiley face" width="175" height="175"><br>
+"Needs Quote"<br><br><a class="btn-primary" href="#">Read Endorsement</a></td>
+
+
+</tr>
+</tbody>
+</table>
