@@ -2,11 +2,15 @@
 <table style="table-layout: fixed; width: 100%; float: middle; text-align: center;" border="0" cellpadding="20">	 	 
 <tbody>
 
-<tr valign="top">
-<td class="ui-helper-center" style="font-size: 2vh; text-align: middle; word-wrap: break-word;"><b>African Union</b>
+<tr valign="top" style="height: 500px;">
+<td class="ui-helper-center" style="font-size: 2vh; text-align: middle; word-wrap: break-word;">
+<b>African Union</b>
+
 <img style="height: 20vh; width: auto;" src="http://www.drtedros.com/wp-content/uploads/2017/05/Logo_of_the_African_Union.png" width="175" height="175">
 "Dr. Tedros has the formal endorsement of the African Union."
-<br><a style="white-space: nowrap; width: auto; box-sizing: border-box; font-size: 1.1vw;" style="white-space: nowrap; width: auto; box-sizing: border-box; font-size: 1.1vw;" class="btn-primary" href="http://allafrica.com/stories/201602040758.html">Read Endorsement</a></td>
+<br><a style="white-space: nowrap; width: auto; box-sizing: border-box; font-size: 1.1vw;" style="white-space: nowrap; width: auto; box-sizing: border-box; font-size: 1.1vw;" class="btn-primary" href="http://allafrica.com/stories/201602040758.html">Read Endorsement</a>
+</td>
+
 
 
 <td class="ui-helper-center" style="font-size: 2vh; text-align: middle; word-wrap: break-word;"><b>The African, Caribbean, Pacific Council of Ministers</b>
@@ -24,7 +28,7 @@ Chairperson, African Union Commission
 </tr>
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 
 
 
@@ -47,7 +51,7 @@ Conservative MP for Sutton Coldfield
 <br><a style="white-space: nowrap; width: auto; box-sizing: border-box; font-size: 1.1vw;" class="btn-primary" href="https://www.theguardian.com/commentisfree/2017/apr/27/who-failed-ebola-pandemic-reform-world-health-organization-dr-tedros-adhanom-ghebreyesus">Read Endorsement</a></td>
 </tr>
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>H.E. Faure Essozimna Gnassingbe</b>
 President, Togo
@@ -69,7 +73,7 @@ Former President, Botswana
 
 </tr>
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 
 <td class="ui-helper-center" style="font-size: 2vh; text-align: middle; word-wrap: break-word;"><b>H.E. Mokgweetsi Eric Keabetswe Masisi</b>
 Vice-President, Botswana
@@ -91,7 +95,7 @@ Minister of Public Health, Democratic Republic of the Congo
 <br><a style="white-space: nowrap; width: auto; box-sizing: border-box; font-size: 1.1vw;" class="btn-primary" href="http://www.adiac-congo.com/content/course-la-direction-generale-de-loms-la-rdc-soutient-la-candidature-de-lethiopie-58042">Read Endorsement</a></td>
 </tr>
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 
 <td class="ui-helper-center" style="font-size: 2vh; text-align: middle; word-wrap: break-word;"><b>H.E. Louise Mushikiwabo</b>
 Minister of Foreign Affairs and Cooperation, Rwanda
@@ -115,7 +119,7 @@ Minister of Foreign Affairs, Algeria
 
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>H.E. Dr. Augustine Philip Mahiga</b>
 Minister of Foreign Affairs, Tanzania
@@ -139,11 +143,9 @@ African Union Permanent Representative to the United Nations in Geneva
 </tr>
 
 
-<tr valign="top">
 
 
-
-
+<tr valign="top" style="height: 500px;">
 
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>Ayanle Salad Dirye</b>
 Deputy Ambassador of Somaliland to Ethiopia
@@ -166,7 +168,7 @@ Deputy Ambassador of Somaliland to Ethiopia
 
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>Medical Education Partnership Initiative Council of PIs</b>
 <img style="height: 20vh; width: auto;" src="http://sites.globalhealth.duke.edu/dukekcmcmepi/wp-content/uploads/sites/7/2014/08/logo-with-map.png" alt="Smiley face" width="175" height="175">
@@ -190,7 +192,7 @@ service and access."
 
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>Ethiopian Medical Association</b>
 <img style="height: 20vh; width: auto;" src="http://www.ethiojobs.net/files/pictures/ema.png" alt="Smiley face" width="175" height="175">
 "Tedros has the best credentials and vision to tackle existing and emerging health threats."
@@ -212,7 +214,7 @@ service and access."
 
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 
 
 
@@ -235,7 +237,7 @@ Public Health Physician and Current Health Advisor, Save the Children
 <br><a style="white-space: nowrap; width: auto; box-sizing: border-box; font-size: 1.1vw;" class="btn-primary" href="http://blogs.plos.org/yoursay/2017/04/05/opinion-who-should-lead-who/">Read Endorsement</a></td>
 </tr>
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>Dr. Akash Goel</b>
 Physician, Journalist and WEF Global Shaper
 <img style="height: 20vh; width: auto;" src="https://pbs.twimg.com/profile_images/821787460132859904/9a7GyLMO.jpg" alt="Smiley face" width="175" height="175">
@@ -258,7 +260,7 @@ Children Heart Fund Ethiopia, Cardiac Center
 </tr>
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>Dr. Giorgio Roscigno</b>
 Medical Researcher
 <img style="height: 20vh; width: auto;" src="https://static1.squarespace.com/static/56fe928bc6fc08ade2304e6e/t/56fee5554c2f85b11665d1e6/1459545536313/" alt="Smiley face" width="175" height="175">
@@ -283,7 +285,7 @@ Director of Healthcare Research, William Davidson Institute, University of Michi
 
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>Samuel Getachew</b>
 Ethiopian Diaspora Blogger
 <img style="height: 20vh; width: auto;" src="http://www.thecanadiandaily.ca/wp-content/uploads/2014/08/Samuel-Getachew-2013_medium_180wide.jpg" alt="Smiley face" width="175" height="175">
@@ -309,7 +311,7 @@ Ethiopian Diaspora Blogger
 
 
 
-<tr valign="top">
+<tr valign="top" style="height: 500px;">
 <td class="ui-helper-center" style="font-size: 2vh; word-wrap: break-word;"><b>Nicole Schiegg</b>
 Strategic Communications Specialist
 <img style="height: 20vh; width: auto;" src="https://static1.squarespace.com/static/520d5445e4b04f935ef65f6e/t/54e8bb1be4b0dc5d50326a60/1424538396125/NicoleHuffPoPhoto.jpg?format=300w" alt="Smiley face" width="175" height="175">
